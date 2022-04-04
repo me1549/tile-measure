@@ -53,9 +53,10 @@
           </div>
         </div>
       </div>
-      <h2><?php echo $_GET['message'] ?></h2>
+      <a href="/"><input type="submit" value="リセット"></a>
       <h2>
-        <?php for ($i = 1; $i <= 50; $i++) {
+        <?php
+        for ($i = 1; $i <= 50; $i++) {
           echo $i . '枚目' . '<br/>' . $_GET['answer'] * $i . 'mm' . '<br/>';
         } ?>
       </h2>
