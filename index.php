@@ -33,7 +33,7 @@
                 <br>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
-                    <label for="number2" class="col-form-label">目地の幅</label>
+                    <label for="number2" class="col-form-label">目地</label>
                   </div>
                   <div class="col-auto">
                     <input class="form-control" type="string" name="number2">
