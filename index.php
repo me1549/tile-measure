@@ -53,13 +53,14 @@
           </div>
         </div>
       </div>
+      <h2><?php echo $_GET['message'] ?></h2>
       <h2>
         <?php for ($i = 1; $i <= 50; $i++) {
           echo $i . '枚目' . '<br/>' . $_GET['answer'] * $i . 'mm' . '<br/>';
         } ?>
       </h2>
       <h2><?php echo $_GET['message'] ?></h2>
-      <a href="index.php"><input type="submit" value="リセット"></a>
+      <a href="/"><input type="submit" value="リセット"></a>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
