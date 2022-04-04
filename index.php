@@ -11,6 +11,7 @@
   <div class="container" align="center">
     <br>
     <h1>タイル計測</h1>
+    <h5>メジャーは100mmを起点としてください。</h5>
     <div class="row">
       <div class="col-12">
         <div class="card mt-5">
@@ -57,7 +58,8 @@
       <h2>
         <?php
         for ($i = 1; $i <= 50; $i++) {
-          echo $i . '枚目' . '<br/>' . $_GET['answer'] * $i . 'mm' . '<br/>';
+          $answer = $_GET['answer'] * $i + 100;
+          echo $i . '枚目' . '<br/>' . $answer . 'mm' . '<br/>';
         } ?>
       </h2>
       <h2><?php echo $_GET['message'] ?></h2>
