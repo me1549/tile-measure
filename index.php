@@ -70,7 +70,10 @@
         </div>
       </div>
       <a href="/"><input type="submit" value="リセット"></a>
-      <h1>全幅<?php echo $_GET['number3'] ?>mm、タイル<?php echo $_GET['number1'] ?>mm、目地<?php echo $_GET['number2'] ?>mmの場合</h1>
+      <h1>全幅<?php echo $_GET['number3'] ?>mm</h1>
+      <h1>タイル<?php echo $_GET['number1'] ?>mm</h1>
+      <h1>目地<?php echo $_GET['number2'] ?>mmの場合</h1>
+      <br><br><br><br>
       <h2>タイル<?php echo $_GET['floor'] ?>枚</h2>
       <br><h2>と</h2><br>
       <h2>切れ物<?php echo $_GET['cat'] ?>mm</h2>
