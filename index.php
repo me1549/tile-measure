@@ -10,7 +10,7 @@
 <body>
   <div class="container" align="center">
     <br>
-    <h1>タイル計測</h1>
+    <h1>タイル割り計測</h1>
     <h5>メジャーは100mmを起点としてください。</h5>
     <h5>測定し直す場合はリセットを押してから入力してください。</h5>
     <div class="row">
@@ -19,9 +19,23 @@
           <div class="card-body pt-3">
             <div class="card-text">
               <form class="formula" action="calculate.php" method="post">
+              <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="number3" class="col-form-label">全幅</label>
+                  </div>
+                  <div class="col-auto">
+                    <input class="form-control" type="string" name="number3">
+                  </div>
+                  <div class="col-auto">
+                    <span class="form-text">
+                      mm
+                    </span>
+                  </div>
+                </div>
+                <br>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
-                    <label for="number1" class="col-form-label">タイルの長さ</label>
+                    <label for="number1" class="col-form-label">タイル</label>
                   </div>
                   <div class="col-auto">
                     <input class="form-control" type="string" name="number1">
@@ -56,14 +70,20 @@
         </div>
       </div>
       <a href="/"><input type="submit" value="リセット"></a>
+      <h1>全幅<?php echo $_GET['number3'] ?>mm、タイル<?php echo $_GET['number1'] ?>mm、目地<?php echo $_GET['number2'] ?>mmの場合</h1>
+      <h2>タイル<?php echo $_GET['floor'] ?>枚</h2>
+      <br><h2>と</h2><br>
+      <h2>切れ物<?php echo $_GET['cat'] ?>mm</h2>
+      <h2><?php echo $_GET['message'] ?></h2>
+      <br><br><br>
+      <h1>印の位置</h1>
       <h2>
         <?php
-        for ($i = 1; $i <= 50; $i++) {
+        for ($i = 1; $i <= $_GET['floor']; $i++) {
           $answer = $_GET['answer'] * $i + 100;
           echo $i . '枚目' . '<br/>' . $answer . 'mm' . '<br/>';
         } ?>
       </h2>
-      <h2><?php echo $_GET['message'] ?></h2>
       <a href="/"><input type="submit" value="リセット"></a>
     </div>
   </div>
