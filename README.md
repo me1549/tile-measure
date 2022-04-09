@@ -75,6 +75,10 @@ https://tile-measure.herokuapp.com/
 確かに手間がかかります。先程の例えは貼る枚数が3枚でしたが、これが何十枚となってくるとかなり計算に時間がかかってしまいます。
 そこで、タイルを貼る場所の全体の幅とタイルの幅、目地の幅を入力するだけで、全てを計算してくれる測定ツールを開発しました。
 
+<img width="492" alt="スクリーンショット 2022-04-10 0 37 32" src="https://user-images.githubusercontent.com/64354869/162581019-75e63f60-573a-4dc5-9013-89cb0a1b02f4.png">
+
+<img width="469" alt="スクリーンショット 2022-04-10 0 38 23" src="https://user-images.githubusercontent.com/64354869/162581021-9612fff7-2293-486c-ac62-ec6b4a6771da.png">
+
 
 
 
