@@ -73,8 +73,21 @@ https://tile-measure.herokuapp.com/
 ### 全てをワンクリックで
 
 確かに手間がかかります。先程の例えは貼る枚数が3枚でしたが、これが何十枚となってくるとかなり計算に時間がかかってしまいます。
-そこで、タイルを貼る場所の全体の幅とタイルの幅、目地の幅を入力するだけで、全てを計算してくれる測定ツールを開発しました。
+そこで、全体の幅とタイルの幅、目地の幅を入力するだけで、全てを計算してくれる測定ツールを開発しました。
 
 <img width="492" alt="スクリーンショット 2022-04-10 0 37 32" src="https://user-images.githubusercontent.com/64354869/162581019-75e63f60-573a-4dc5-9013-89cb0a1b02f4.png">
 
 <img width="469" alt="スクリーンショット 2022-04-10 0 38 23" src="https://user-images.githubusercontent.com/64354869/162581021-9612fff7-2293-486c-ac62-ec6b4a6771da.png">
+
+受け取った全幅（width）、タイルの幅（tile)、目地(joint)を元に必要なタイルの枚数($floor)と切れ物の長さを($cat)を返しています。
+
+![スクリーンショット 2022-04-10 1 07 22](https://user-images.githubusercontent.com/64354869/162582050-77b8d702-9c47-4a70-9b34-2eb4f6185e89.png)
+
+印の位置は繰り返し処理で表示させています。
+
+![スクリーンショット 2022-04-10 1 19 34](https://user-images.githubusercontent.com/64354869/162582542-d68233bd-a19f-47a9-9fef-22cee8888fa1.png)
+
+
+## 使用技術
+PHP,Bootstrap
+
