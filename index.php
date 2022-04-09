@@ -21,24 +21,10 @@
               <form class="formula" action="calculate.php" method="post">
               <div class="row g-3 align-items-center">
                   <div class="col-auto">
-                    <label for="number3" class="col-form-label">全幅</label>
+                    <label for="width" class="col-form-label">全幅</label>
                   </div>
                   <div class="col-auto">
-                    <input class="form-control" type="string" name="number3">
-                  </div>
-                  <div class="col-auto">
-                    <span class="form-text">
-                      mm
-                    </span>
-                  </div>
-                </div>
-                <br>
-                <div class="row g-3 align-items-center">
-                  <div class="col-auto">
-                    <label for="number1" class="col-form-label">タイル</label>
-                  </div>
-                  <div class="col-auto">
-                    <input class="form-control" type="string" name="number1">
+                    <input class="form-control" type="string" name="width">
                   </div>
                   <div class="col-auto">
                     <span class="form-text">
@@ -49,10 +35,24 @@
                 <br>
                 <div class="row g-3 align-items-center">
                   <div class="col-auto">
-                    <label for="number2" class="col-form-label">目地</label>
+                    <label for="tile" class="col-form-label">タイル</label>
                   </div>
                   <div class="col-auto">
-                    <input class="form-control" type="string" name="number2">
+                    <input class="form-control" type="string" name="tile">
+                  </div>
+                  <div class="col-auto">
+                    <span class="form-text">
+                      mm
+                    </span>
+                  </div>
+                </div>
+                <br>
+                <div class="row g-3 align-items-center">
+                  <div class="col-auto">
+                    <label for="joint" class="col-form-label">目地</label>
+                  </div>
+                  <div class="col-auto">
+                    <input class="form-control" type="string" name="joint">
                   </div>
                   <div class="col-auto">
                     <span class="form-text">
@@ -70,9 +70,9 @@
         </div>
       </div>
       <a href="/"><input type="submit" value="リセット"></a>
-      <h1>全幅<?php echo $_GET['number3'] ?>mm</h1>
-      <h1>タイル<?php echo $_GET['number1'] ?>mm</h1>
-      <h1>目地<?php echo $_GET['number2'] ?>mmの場合</h1>
+      <h1>全幅<?php echo $_GET['width'] ?>mm</h1>
+      <h1>タイル<?php echo $_GET['tile'] ?>mm</h1>
+      <h1>目地<?php echo $_GET['joint'] ?>mmの場合</h1>
       <br><br><br><br>
       <h2>タイル<?php echo $_GET['floor'] ?>枚</h2>
       <br><h2>と</h2><br>
